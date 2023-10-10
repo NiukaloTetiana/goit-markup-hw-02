@@ -145,7 +145,7 @@ body {
 .team {
     background-color:  var(--section-theme);
 } 
-.team-list {
+.team-link {
     background-color: var(--primary-theme);
 }
 /* =============/TEAM================ */
