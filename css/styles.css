@@ -3,12 +3,12 @@
     --primary-font: "Roboto", sans-serif;
     --logo-font: "Raleway", sans-serif;
 
-   --primary-theme:  #FFF;
+   --primary-theme: #FFF;
    --navy-titel-color: #2E2F42;
-   --text-color: #434455;
+   --main-text-color: #434455;
    --brand-color: #4D5AE5;
    --accent-color: #404BBF;
-   --footer-color: #F4F4FD;
+   --section-theme: #F4F4FD;
 }
 /* =============/ROOT============= */
 
@@ -25,8 +25,8 @@
 
 
 body {
-    background-color: var(--primary-background);
-    color: var(--navy-titel-color);
+    background-color: var(--primary-theme);
+    color: var(--main-text-color);
 
     font-family:  var(--primary-font);
     font-style: normal;
@@ -47,19 +47,20 @@ body {
     text-transform: uppercase;
         }
 .logo-studio {
-    color: var(--navy-color);
+    color: var(--navy-titel-color);
 }
 .logo-studio-footer {
-    color: var(--footer-color);
+    color: var(--section-theme);
   }
   /* ============/LOGO============== */
 
 /* =============ADDRESS============== */
-.address-link {
-    color: var(--text-color);
-
-    font-size: 16px;
+.address-item {
     font-style: normal;
+    font-size: 16px;
+}
+.address-link {
+    color: var(--main-text-color);
 }
 
 .address-link:hover,
@@ -74,14 +75,14 @@ body {
     background-color: var(--navy-titel-color)
 }
 .modal-btn {
-    color: #FFF;
+    color: var(--primary-theme);
     background-color: var(--brand-color);
 
     font-family: inherit;
     font-size: 16px;
     font-weight: 500;
+    line-height:inherit;
     letter-spacing: 0.64px;
-    border-radius: 4px;
     cursor: pointer;
 }
 .modal-btn:hover,
@@ -98,7 +99,9 @@ body {
     letter-spacing: 1.12px;
     text-align: center;
 }
+
 .menu-link {
+    color: var(--navy-titel-color);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -120,7 +123,7 @@ body {
     letter-spacing: 0.4px;
 }
 .feature-text {
-    color: var(--text-color);
+    color: var(--main-text-color);
 
     font-size: 16px;
 }
@@ -128,6 +131,7 @@ body {
  
 /* ===========ACTIVITIES============= */
 .section-title {
+    color: var(--navy-titel-color);
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -138,23 +142,30 @@ body {
 /* ==========/ACTIVITIES============= */
 
 /* ==============TEAM================ */
+.team {
+    background-color:  var(--section-theme);
+} 
+.team-list {
+    background-color: var(--primary-theme);
+}
 /* =============/TEAM================ */
 
 /* ==============FILTER============== */
 .filter-btn {
     color: var(--brand-color);
+    background-color: var(--section-theme);
 
     text-align: center;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.64px;
     font-family: inherit;
+    line-height: inherit;
     cursor: pointer;
 }
 .filter-btn:hover,
 .filter-btn:focus {
-    border-radius: 4px;
-    background: var(--accent-color);
+    background-color: var(--accent-color);
     color: var(--primary-theme);
 }
 /* =============/FILTER============== */
@@ -164,7 +175,7 @@ footer {
     background-color: var(--navy-titel-color);
 }
 .footer-text {
-    color: var(--footer-color);
+    color: var(--section-theme);
 
     font-size: 16px;
 }
